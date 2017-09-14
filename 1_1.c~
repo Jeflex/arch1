@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+main(){
+  int c;
+
+  while((c=getChar())!=EOF){
+    if(c=="\t"){
+      putChar('\t');
+    }
+    if(c=="\b"){
+      putChar('\b'); 
+    }
+    if(c=="\\"){
+      putChar('\\');
+    }
+}
